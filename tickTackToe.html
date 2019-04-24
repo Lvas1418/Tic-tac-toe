@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tick-tack-toe</title>
+    <link href="TickTackToeCSS.css" rel="stylesheet">
+</head>
+<body>
+<div class="preloader" id="preloader">
+    <div class="loader"></div>
+</div>
+<button class="button" type="button" id="start"> Start</button>
+<section id="name" class="content">
+    <p> <strong class="text"> Введите ваше имя: </strong><br>
+        <input id="inputName" type="text" size="40">
+        <button class="button" type="button" id="buttonName"> Ok </button>
+    </p>
+</section>
+<section  class="content">
+    <section class="marks" id="marks">
+        <div  id="cross"><img id="crossImg" src="./img/cross.PNG"></div>
+        <strong class="text"> или </strong>
+        <div  id="zero"><img id="zeroImg" src="./img/zero.PNG"></div>
+    </section>
+    <canvas width="340" height="340" id="canvas"></canvas>
+</section>
+<script src="TickTackToeJS.js" type="text/javascript"></script>
+</body>
+</html>

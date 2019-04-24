@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    visibility: hidden;
+    background: #008B8B;
+}
+
+input {
+    margin-top: 10px;
+    width: 100%;
+    height: 30px;
+}
+
+.button {
+    position: absolute;
+    width: 120px;
+    height: 50px;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+#oo {
+    display: none;
+}
+
+.text {
+    text-align: center;
+    width: 80px;
+    font-size: 30px;
+}
+
+.marks {
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#name {
+    visibility: hidden;
+    position: absolute;
+}
+
+.content {
+    height: 550px;
+    width: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    visibility: hidden;
+}
+
+.loader {
+    height: 75px;
+    width: 75px;
+    border: 10px solid white;
+    border-radius: 50%;
+    border-top-color: aquamarine;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: 2s spin infinite linear;
+}
+.active{
+    visibility: visible;
+    opacity: 0.3;
+}
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+    transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
