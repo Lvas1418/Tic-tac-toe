@@ -3,7 +3,9 @@
     padding: 0;
 }
 
-body {
+#wrapper {
+    width: 100%;
+    position: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +61,13 @@ input {
     justify-content: center;
     align-items: center;
 }
-
+.mocha{
+    position: absolute;
+    margin-top: 0px;
+}
+#mocha {
+   transform: translateX(0);
+}
 .preloader {
     position: fixed;
     left: 0;
