@@ -1,4 +1,5 @@
 mocha.setup('bdd');
+
 let assert = chai.assert;
 
 describe('Check start game', function () {
